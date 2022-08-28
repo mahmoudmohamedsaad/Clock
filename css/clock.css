@@ -133,6 +133,7 @@ body {
 footer p{
   color: #bee8f1;
   position: absolute;
-  top: 81%;
+  top: 90%;
   left: 42%;
+  font-size: 25px;
 }
