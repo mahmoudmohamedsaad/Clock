@@ -1,0 +1,132 @@
+/* Start Variables */
+
+:root {
+  --main-color: #1abc9c;
+  --title-color: #484f58;
+  --para-color: #777777;
+  --section-background: #ECF0F1;
+  --section-pad: 50px;
+  --trans-dur: 0.3s;
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000016;
+}
+.clock{
+  height: 400px;
+  width: 400px;
+  border: 1px solid #000;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  border-radius: 50%;
+  background-color: #bee8f1;
+}
+.clock .c12{
+  width: 4px;
+  height: 380px;
+  background-color: #3a6cf4;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+}
+.clock .c3{
+  width: 380px;
+  height: 4px;
+  background-color: #3a6cf4;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+.clock .c2{
+  width: 4px;
+  height: 380px;
+  background-color: #88a5ab;
+  rotate: 30deg;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+}
+.clock .c4{
+  width: 4px;
+  height: 380px;
+  background-color: #88a5ab;
+  rotate: -30deg;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+}
+.clock .c1{
+  width: 4px;
+  height: 380px;
+  background-color: #88a5ab;
+  rotate: 60deg;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+}
+.clock .c5{
+  width: 4px;
+  height: 380px;
+  background-color: #88a5ab;
+  rotate: -60deg;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+}
+
+.clock .oc{
+  width: 350px;
+  height: 350px;
+  background-color: #bee8f1;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  top: 6%;
+  left: 6%;
+}
+.hand{
+  width: 50%;
+  right: 50%;
+  height: 6px;
+  background: #61afff;
+  position: absolute;
+  top: 50%;
+  border-radius: 6px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+  
+}
+
+.hand.hour-hand{
+  width: 30%;
+  z-index: 3;
+}
+.hand.min-hand{
+  width: 40%;
+  height: 3px;
+  background-color: #1a8fee;
+  z-index: 4;
+}
+.hand.second-hand{
+  width: 45%;
+  height: 2px;
+  background-color: #ee791a;
+  z-index: 5;
+}
