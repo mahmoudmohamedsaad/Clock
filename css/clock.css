@@ -130,3 +130,9 @@ body {
   background-color: #ee791a;
   z-index: 5;
 }
+footer p{
+  color: #bee8f1;
+  position: absolute;
+  top: 81%;
+  left: 42%;
+}
